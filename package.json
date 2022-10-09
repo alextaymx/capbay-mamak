@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "dev-inspect": "NODE_OPTIONS='--inspect' next dev",
-    "build": "npm run codegen && next build",
+    "build-codegen": "npm run codegen && next build",
+    "build": "next build",
     "start": "next start",
     "export": "next export",
     "clean": "rimraf \"{.next,dist,build,out,node_modules}\"",
