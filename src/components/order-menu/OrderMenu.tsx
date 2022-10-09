@@ -4,7 +4,7 @@ import { Tab } from "@headlessui/react";
 import clsx from "clsx";
 
 import { Container } from "@components/base/Container";
-import { MENU_ITEM_DETAILS } from "@lib/pricingScheme";
+import { MENU_ITEM_DETAILS } from "@lib/MENU_ITEM_DETAILS";
 import MenuItemQuantityButton from "./MenuItemQuantityButton";
 
 const orderSection = [
@@ -162,7 +162,10 @@ export function OrderMenu() {
                                 )}
                               </div>
                               <div className="ml-4 flex-grow">
-                                <p className="text-sm font-medium text-gray-900">{item.name}</p>
+                                <p className="text-sm font-medium text-gray-900">
+                                  <span className="mr-1 text-gray-500">({item.code})</span>
+                                  {item.name}
+                                </p>
                                 <p className="text-sm text-gray-500">{item.description}</p>
                               </div>
                               <div className="w-full sm:w-7/12 flex justify-end items-center">
@@ -171,24 +174,6 @@ export function OrderMenu() {
                             </a>
                           ))}
                         </div>
-                        {/* <div className="bg-gray-50 p-4 text-center italic text-xs">
-                          End of the list
-                        </div> */}
-                        {/* <div className="bg-gray-50 p-4">
-                          <a
-                            href="##"
-                            className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                          >
-                            <span className="flex items-center">
-                              <span className="text-sm font-medium text-gray-900">
-                                Documentation
-                              </span>
-                            </span>
-                            <span className="block text-sm text-gray-500">
-                              Start integrating products and tools
-                            </span>
-                          </a>
-                        </div> */}
                       </div>
                     </div>
                   </Tab.Panel>

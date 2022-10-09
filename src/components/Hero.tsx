@@ -22,7 +22,9 @@ export function Hero() {
         to start your day.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Order from CapBay Mamak at your fingertips
+        Order from CapBay Mamak at your fingertips. It's food lovers like you who inspire us to do
+        what we do. Your comments, ideas and questions push us to go that extra mile, every time. So
+        drop us a line!
       </p>
       <div className="mt-10 flex justify-center space-x-6">
         <ButtonLink href="#menu">Order Now</ButtonLink>

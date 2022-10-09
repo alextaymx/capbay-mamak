@@ -1,5 +1,6 @@
 import MenuItemQuantityButton from "@components/order-menu/MenuItemQuantityButton";
-import { MENU_ITEM_DETAILS, Pricing_Strategy } from "@lib/pricingScheme";
+import { Pricing_Strategy } from "@lib/MenuItemDetails";
+import { MENU_ITEM_DETAILS } from "@lib/MENU_ITEM_DETAILS";
 import { isNil, orderBy } from "lodash";
 import Image from "next/image";
 import React, { useMemo } from "react";

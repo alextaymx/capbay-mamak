@@ -1,9 +1,7 @@
 import { Container } from "@components/base/Container";
-import {
-  getCartItemGroupedByQuantity,
-  getTotalPriceInCart,
-  MENU_ITEM_DETAILS,
-} from "@lib/pricingScheme";
+import { getTotalPriceInCart } from "@lib/getTotalPriceInCart";
+import { getCartItemGroupedByQuantity } from "@lib/utils";
+import { MENU_ITEM_DETAILS } from "@lib/MENU_ITEM_DETAILS";
 import { selectCartItems } from "@lib/redux/cart/cartSlice";
 import React, { useMemo } from "react";
 import { useSelector } from "react-redux";
