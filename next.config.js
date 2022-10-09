@@ -14,8 +14,9 @@ const nextConfig = {
   // TYPESCRIPT CHEATSHEAT : https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/context/
   // SUGGESTIONS : https://www.smashingmagazine.com/2021/11/maintain-large-nextjs-application/
   // HUGE DEPLOYMENT WORKFLOW : https://colinwilson.uk/2020/12/25/deploy-a-hugo-website-to-vercel-using-github-actions-a-simple-workflow/
-
+  // https://github.com/vercel/next.js/tree/canary/examples/with-ant-design
   reactStrictMode: true,
+  swcMinify: true,
 
   // async redirects() {
   //   return [
@@ -29,10 +30,9 @@ const nextConfig = {
   images: {
     domains: [
       "storage.googleapis.com",
-      "cdn.ab2c.xyz",
       "localhost",
       "127.0.0.1",
-      // "ab2c.vercel.app",
+      // "domain.vercel.app",
       // your domain
     ],
   },
