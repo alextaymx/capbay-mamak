@@ -74,13 +74,13 @@ function MobileNavigation() {
                     </a>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="#pricing">
                     <a className="block w-full" onClick={() => close()}>
                       Pricing
                     </a>
                   </Link>
-                </li>
+                </li> */}
                 <li className="border-t border-slate-300/40 pt-4">
                   <Link href="#menu">
                     <a className="block w-full">Order Now</a>
@@ -123,13 +123,13 @@ export function Header() {
                 </a>
               </Link>
             </li>
-            <li className="ml-6 hidden md:block">
+            {/* <li className="ml-6 hidden md:block">
               <Link href="#pricing">
                 <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
                   Pricing
                 </a>
               </Link>
-            </li>
+            </li> */}
             <li className="ml-auto hidden md:block">
               <Link href="https://alextaymx.netlify.app">
                 <a
