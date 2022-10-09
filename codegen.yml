@@ -1,0 +1,16 @@
+overwrite: true
+schema: "${NEXT_PUBLIC_GRAPHQL_API_ENDPOINT}"
+documents: "./src/graphql/**/*.graphql"
+generates:
+  ./src/graphql/generated/graphql.tsx:
+    plugins:
+      - add:
+          content: "/* eslint-disable */"
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config:
+      withHooks: true
+      withHOC: false
+      withComponent: false
+      exportFragmentSpreadSubTypes: true
