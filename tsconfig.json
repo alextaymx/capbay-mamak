@@ -19,7 +19,7 @@
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,
 
-    "target": "es5",
+    "target": "es2015",
     "outDir": "out",
     "declaration": true,
     "sourceMap": true,
@@ -38,6 +38,8 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
+      "@images/*": ["src/components/images/*"],
+
       "@containers/*": ["src/containers/*"],
       "@contexts/*": ["src/contexts/*"],
       "@framework/*": ["src/framework/basic-rest/*"],
@@ -46,7 +48,8 @@
       "@utils/*": ["src/utils/*"],
       "@lib/*": ["src/lib/*"],
       // EXTRAS
-      "@type/*": ["src/types/*"]
+      "@type/*": ["src/types/*"],
+      "@redux/*": ["src/lib/redux/*"]
 
       // "@/*": ["./src/*"],
       // "@/public/*": ["./public/*"]
